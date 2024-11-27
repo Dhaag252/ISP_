@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ticket Indienen - Mountain Goats Support</title>
+  <link rel="stylesheet" href="style.css"> <!-- Verbind de aangepaste stijl -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"> <!-- Google Fonts voor Roboto -->
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo-container">
+        <img src="logo.png" alt="Mountain Goats Logo" class="logo">
+      </div>
+      <h1>Ticket Indienen</h1>
+      <a href="index.html">Home</a>
+        <a href="Manuals.html">Manuals</a>
+        <a href="faq.html" class= >FAQ</a>
+        <a href="Support.html">Support</a>
+        <a href="Downloads.html">Downloads</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Section -->
+  <main class="main">
+    <div class="container">
+      <h2>Dien een Ticket In</h2>
+      <p>Vul het formulier in om je probleem of vraag in te dienen. We helpen je zo snel mogelijk.</p>
+
+      <!-- Formulier om ticket in te dienen -->
+      <form action="submit-ticket.php" method="POST" class="ticket-form">
+        <div class="form-group">
+          <label for="naam">Naam:</label>
+          <input type="text" id="naam" name="naam" placeholder="Jouw naam" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" placeholder="Jouw e-mail" required>
+        </div>
+
+        <div class="form-group">
+          <label for="onderwerp">Onderwerp:</label>
+          <input type="text" id="onderwerp" name="onderwerp" placeholder="Onderwerp van het ticket" required>
+        </div>
+
+        <div class="form-group">
+          <label for="beschrijving">Beschrijving:</label>
+          <textarea id="beschrijving" name="beschrijving" placeholder="Beschrijf je probleem of vraag in detail" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" class="submit-btn">Verstuur Ticket</button>
+        </div>
+      </form>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Mountain Goats Support. Alle rechten voorbehouden.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

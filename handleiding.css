@@ -1,0 +1,102 @@
+/* Algemene styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #F5F5F5; /* Lichtgrijze achtergrond */
+    color: #333333; /* Donkergrijze tekst */
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #007BFF; /* Blauw als hoofdkleur */
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+  }
+  
+  .header a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+  }
+  
+  .header a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main Content */
+  .main {
+    padding: 2em 0;
+  }
+  
+  .main h2 {
+    text-align: center;
+    color: #007BFF;
+    margin-bottom: 20px;
+  }
+  
+  .knowledge-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .knowledge-list li {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .knowledge-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .knowledge-list a {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .knowledge-list a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #333333; /* Donkergrijs */
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 20px;
+  }
+  
+  /* Responsiviteit */
+  @media (max-width: 768px) {
+    .knowledge-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .knowledge-list li {
+      max-width: 100%;
+    }
+  }
+  
